@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label>Ingrese su nombre: </label>
+            <input id="nombre" type="text">
+            <p id="MostarErrorNombre">El nombre debe contener minimo 3 caracteres</p>
+        </div>
+        <div>
+            <label>Ingrese su email: </label>
+            <input id="email" type="email">
+            <p id="MostrarErrorMail">El Mail debe contener @gmail</p>
+        </div>
+        <div>
+            <label>Ingrese su contraseña: </label>
+            <input id="contraseña" type="password">
+            <ul>
+                <li id="Caracteres">
+                    Mínimo 8 caracteres
+                </li>
+                <li id="Numeros">   
+                    Debe contener al menos un número
+                </li>
+                <li id="Mayusculas">
+                    Mínimo 1 mayúscula
+                </li>
+            </ul>
+        </div>
+        <div>
+            <label>Escriba devuelta su contraseña: </label>
+            <input id="verificarContraseña" type="password">
+            <p id="MostrarMensaje">La contraseña ingresada no es la misma</p>
+        </div>
+
+        <button onclick="confirmarEnvio()" id="enviar" type="submit">Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -58,9 +58,9 @@ Email.addEventListener('input', () => {
 Contraseña.addEventListener('input', () => {
     passwordValue = Contraseña.value;
 
-    Mayusculas.style.color = 'black';
-    Caracteres.style.color = 'black';
-    Numeros.style.color = 'black';
+    Mayusculas.style.color = 'green';
+    Caracteres.style.color = 'green';
+    Numeros.style.color = 'green';
 
     if(!contraseñaSegura.test(passwordValue) || Contraseña.value != ConfirmarContraseña.value){
         if (!contraseñaCaracteres.test(passwordValue)) {
